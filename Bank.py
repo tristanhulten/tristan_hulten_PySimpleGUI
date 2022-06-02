@@ -1,7 +1,7 @@
 #import av moduler
 import PySimpleGUI as sg
 
-#variabel lista och dictionary
+#variabellista och dictionary
 saldo = 1000
 total = []
 info = {}
