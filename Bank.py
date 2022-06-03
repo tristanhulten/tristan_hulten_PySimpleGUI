@@ -11,7 +11,7 @@ def öppna_kontofil(filnamn):
     global info
     with open (filnamn) as login_file:
         for x in login_file:
-            #split funktionen delar upp strängar i .txt filen till en lista
+            #split-funktionen delar upp strängar i .txt filen till en lista
             splitline = x.split("___-___")
             info[splitline[0]] = splitline[1]
     login_file.close
@@ -168,7 +168,7 @@ def meny2():
     #stänger fönstret om while loopen slutar gälla
     skapa.close() 
 
-#funktion för användare som vil logga in
+#funktion för användare som vill logga in
 def inloggning():
     global info
     #layout för gui rutan
@@ -210,7 +210,7 @@ def inloggning():
         #stänger ner rutan när while loopen slutar gälla
         inlogg_layout.close()
 
-#går försy till funktionen som läser in inloggningsdatan och lägger in det i vårt dictionary
+#går först till funktionen som läser in inloggningsdatan och lägger in det i vårt dictionary
 öppna_kontofil("login_data.txt")
 #går sedan till första menyn
 meny1()
